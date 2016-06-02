@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/reinaisnothere/ZenefitsCodingChallenge/issues"
   },
-  "homepage": "https://github.com/reinaisnothere/ZenefitsCodingChallenge#readme"
+  "homepage": "https://github.com/reinaisnothere/ZenefitsCodingChallenge#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
