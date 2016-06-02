@@ -1,0 +1,24 @@
+{
+  "name": "zenefit-coding-challenge",
+  "version": "1.0.0",
+  "description": "An app that searches Google Places",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reinaisnothere/ZenefitsCodingChallenge.git"
+  },
+  "keywords": [
+    "Node",
+    "Angular"
+  ],
+  "author": "Reina Mei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reinaisnothere/ZenefitsCodingChallenge/issues"
+  },
+  "homepage": "https://github.com/reinaisnothere/ZenefitsCodingChallenge#readme"
+}
