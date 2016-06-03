@@ -29,6 +29,6 @@ app.get('/places', function(req, res) {
 });
 
 app.listen(3000, function() {
-  console.log('ZenefitsCodingChallenge listening on port 3000...');
+  console.log('Ask Google Places listening on port 3000...');
 });
 
