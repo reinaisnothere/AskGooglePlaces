@@ -11,3 +11,8 @@ input {
 .place {
   text-align: left;
 }
+
+.detail {
+  display: inline-block;
+  padding-right: 20px;
+}

@@ -8,8 +8,10 @@
   <body>
     <h1>Ask Google Places</h1>
     <div ng-app="app" ng-controller="AppController">
+      <form ng-submit="search()">
       <input type="text" placeholder="Enter your keyword(s) here" ng-model="keyword"></input>
       <button ng-click="search()">Search</button>
+      </form>
       <div ng-repeat="place in places">
         <div class="place">
           <div class="detail">{{place.name}}</div>
