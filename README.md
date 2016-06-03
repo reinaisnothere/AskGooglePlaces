@@ -1,5 +1,5 @@
 # AskGooglePlaces
-An app that searches Google Places
+An app that searches Google Places.
 
 1. [Requirements](#requirements)
 2. [Usage](#usage)
