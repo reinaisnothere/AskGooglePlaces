@@ -12,7 +12,7 @@ h1 {
 
 input {
   font-size: 15px;
-  width: 400px;
+  width: 350px;
   height: 25px;
   border-radius: 5px;
   border: 2px grey solid;
@@ -44,4 +44,14 @@ form {
 .name {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media only screen and (max-width : 768px) {
+  body {
+    width: 85%;
+  }
+
+  .detail {
+    display: block
+  }
 }
