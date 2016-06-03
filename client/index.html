@@ -12,6 +12,7 @@
       <input type="text" placeholder="Enter your keyword(s) here" ng-model="keyword"></input>
       <button ng-click="search()">Search</button>
       </form>
+      <img src="/assets/poi.gif" ng-show="loading">
       <div ng-repeat="place in places">
         <div class="place">
           <div class="detail name">{{place.name}}</div>
