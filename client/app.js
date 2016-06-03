@@ -11,10 +11,10 @@ appModule.controller('AppController', function($http, $scope) {
       var location = latitude + ',' + longitude;
       $http({
         method: 'GET',
-        url: '/places?' + 'searchQuery=' + $scope.searchQuery + '&location=' + location
+        url: '/places?' + 'keyword=' + $scope.keyword + '&location=' + location
       })
       .then(function(results) {
-        $scope.places = results.data;
+        $scope.places = results.data.results;
       }, function(err) {
 
       });

@@ -7,7 +7,7 @@
   <body>
     <p>Zenefits Coding Challenge</p>
     <div ng-app="app" ng-controller="AppController">
-      <input type="text" placeholder="Enter a place name here" ng-model="searchQuery"></input>
+      <input type="text" placeholder="Enter a place name here" ng-model="keyword"></input>
       <button ng-click="search()">Search</button>
       <div ng-repeat="place in places">
         <div>{{ place }}</div>
