@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='shortcut icon' href='/assets/favicon.png' type='image/x-icon'/>
-    <title>Zenefits Coding Challenge</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/styles/app.css" />
+    <title>Ask Google Places</title>
   </head>
   <body>
-    <p>Zenefits Coding Challenge</p>
+    <h1>Ask Google Places</h1>
     <div ng-app="app" ng-controller="AppController">
       <input type="text" placeholder="Enter a place name here" ng-model="keyword"></input>
       <button ng-click="search()">Search</button>
       <div ng-repeat="place in places">
-        <div>{{ place }}</div>
+        <div class="place">{{ place }}</div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
