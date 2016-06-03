@@ -13,7 +13,7 @@
       <button ng-click="search()">Search</button>
       </form>
       <img src="/assets/poi.gif" ng-show="loading">
-      <div ng-show="hasError">Failed to return search results :(</div>
+      <div ng-show="showError">Failed to return search results :(</div>
       <div ng-repeat="place in places">
         <div class="place">
           <div class="detail name">{{place.name}}</div>

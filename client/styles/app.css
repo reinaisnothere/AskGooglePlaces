@@ -2,12 +2,13 @@ body {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  color: #004080;
+  color: #408000;
+  background-color: #FAFAFA;
 }
 
 h1 {
   margin-top: 50px;
-  color: #FF5A3B;
+  color: #804000;
 }
 
 input {
@@ -15,7 +16,7 @@ input {
   width: 350px;
   height: 25px;
   border-radius: 5px;
-  border: 2px grey solid;
+  border: 2px #804000 solid;
 }
 
 button {
@@ -33,12 +34,12 @@ form {
 }
 
 a {
-  color: #808000;
+  color: #66CCFF;
   padding-left: 10px;
 }
 
 a:visited {
-  color: #000080;
+  color: #808000;
 }
 
 .place {
