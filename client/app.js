@@ -8,10 +8,10 @@ appModule.controller('AppController', function($http, $scope) {
   $scope.search = function() {
     $http({
       method: 'GET',
-      url: ''
+      url: '/places'
     })
     .then(function(results) {
-
+      $scope.places = results.data;
     }, function(err) {
 
     });
