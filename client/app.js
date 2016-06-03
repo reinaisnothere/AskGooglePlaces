@@ -4,8 +4,10 @@ var appModule = angular.module('app', []);
 appModule.controller('AppController', function($http, $scope) {
   $scope.places = [];
   $scope.loading = false;
+  $scope.hasError = false;
   $scope.search = function() {
     $scope.loading = true;
+    $scope.hasError = false;
     navigator.geolocation.getCurrentPosition(function(position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
@@ -25,7 +27,7 @@ appModule.controller('AppController', function($http, $scope) {
         });
       }, function(err) {
         $scope.loading = false;
-        
+        $scope.hasError = true;
       });
     });
   }
