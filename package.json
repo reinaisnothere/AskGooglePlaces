@@ -23,6 +23,7 @@
   "homepage": "https://github.com/reinaisnothere/ZenefitsCodingChallenge#readme",
   "dependencies": {
     "dotenv": "^2.0.0",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "then-request": "^2.2.0"
   }
 }

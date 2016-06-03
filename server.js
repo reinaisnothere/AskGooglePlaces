@@ -1,5 +1,7 @@
 require('dotenv').load();
 
+var request = require('then-request');
+
 var express = require('express');
 var app = express();
 
