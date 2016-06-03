@@ -32,6 +32,15 @@ form {
   margin-bottom: 30px;
 }
 
+a {
+  color: #808000;
+  padding-left: 10px;
+}
+
+a:visited {
+  color: #000080;
+}
+
 .place {
   text-align: left;
 }
