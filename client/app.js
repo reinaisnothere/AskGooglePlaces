@@ -8,7 +8,7 @@ appModule.controller('AppController', function($http, $scope) {
   $scope.search = function() {
     $http({
       method: 'GET',
-      url: '/places'
+      url: '/places?' + 'searchQuery=' + $scope.searchQuery 
     })
     .then(function(results) {
       $scope.places = results.data;

@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static('client'));
 
 app.get('/places', function(req, res) {
-  res.json([1, 2, 3]);
+  res.json([req.query.searchQuery]);
 });
 
 app.listen(3000, function() {
