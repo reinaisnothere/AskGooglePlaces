@@ -8,10 +8,15 @@
   <body>
     <h1>Ask Google Places</h1>
     <div ng-app="app" ng-controller="AppController">
-      <input type="text" placeholder="Enter a place name here" ng-model="keyword"></input>
+      <input type="text" placeholder="Enter your keyword(s) here" ng-model="keyword"></input>
       <button ng-click="search()">Search</button>
       <div ng-repeat="place in places">
-        <div class="place">{{ place }}</div>
+        <div class="place">
+          <div>{{place.name}}</div>
+          <div>{{place.vicinity}}</div>
+          <a ng-href="//www.google.com/maps?q= + {{place.url}}" target="_blank">View in Google Maps</a>
+          <hr>
+        </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>

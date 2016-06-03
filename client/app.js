@@ -14,7 +14,13 @@ appModule.controller('AppController', function($http, $scope) {
         url: '/places?' + 'keyword=' + $scope.keyword + '&location=' + location
       })
       .then(function(results) {
-        $scope.places = results.data.results;
+        $scope.places = results.data.results.map(function(place) {
+          return {
+            vicinity: place.vicinity,
+            name: place.name,
+            url: place.name + ' ' + place.vicinity
+          }
+        });
       }, function(err) {
 
       });

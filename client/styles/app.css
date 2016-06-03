@@ -4,6 +4,10 @@ body {
   text-align: center;
 }
 
+input {
+  width: 300px;
+}
+
 .place {
   text-align: left;
 }
